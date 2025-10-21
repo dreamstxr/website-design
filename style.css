@@ -13,5 +13,33 @@ body {
 
 /*group selectors*/
 h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 0.5em; 
+    margin-bottom: 0.5em;
+    font-family: "Syne Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+li {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+nav, ul {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+    width: 25%;
+    height: 25%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 100%;
+}
+
+section {
+    background-color: rgba(255, 255, 255, .4);
+    border-style: groove;
+    border-width: 20px;
+    border-color: blueviolet;
+    border-radius: 10px;
+    margin-top: 1em;
 }
