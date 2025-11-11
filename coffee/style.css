@@ -7,6 +7,14 @@
     --light: #ffffff;
     --dark: #363029;
     --muted: #f8f6f5;
+    --font-normal: "Funnel Display", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --font-heading: 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    --space-0: 0; /* 0px */
+    --space-1: 0.5rem; /* 4px */
+    --space-2: 1rem; /* 16px */
+    --space-3: 2rem; /* 32px */
+    
 }
 
 /* CSS Reset*/
@@ -16,12 +24,17 @@
 }
 
 body {
+    font-family: var(--font-heading);
     line-height: 1.5;
 }
 
 h1, h2, h3, h4, h2, h6 {
-    font-family: "Funnel Display", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: var(--font-normal);
     margin-bottom: 0.5rem;
+}
+
+main {
+    align-self: center;
 }
 
 /************************* COLORS PERIADDDDDDDDDDDD********************/
@@ -36,11 +49,27 @@ h1, h2, h3, h4, h2, h6 {
 .text-dark {color: var(--dark);}
 .text-muted {color: var(--muted);}
 
+/************************* SPACINGGGGG PERIADDDDDDDDDDDD********************/
+.m-0 { margin: var(--space-0);}
+.m-1 { margin: var(--space-1);}
+.m-2 { margin: var(--space-2);}
+.m-3 { margin: var(--space-3);}
+
+.p-0 { padding: var(--space-0);}
+.p-1 { padding: var(--space-1);}
+.p-2 { padding: var(--space-2);}
+.p-3 { padding: var(--space-3);}
+
+.gap-0 { gap: var(--space-0);}
+.gap-1 { gap: var(--space-1);}
+.gap-2 { gap: var(--space-2);}
+.gap-3 { gap: var(--space-3);}
+
 /************************* SWATCHESS PERIADDDDDDDDDDDD********************/
 
 .swatches {
     display: flex; /* organises children elements in a line */
-    gap: 1rem;
+
 }
 
 .swatch .swatch-value {
