@@ -49,7 +49,20 @@ main {
 .text-dark {color: var(--dark);}
 .text-muted {color: var(--muted);}
 
+/************************* LAYOUTT PERIADDDDDDDDDDDD********************/
+.d-flex { display: flex;}
+.flex-between { justify-content: space-between;}
+.grid-2col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Repeat 1fr Twice */
+}
+.grid-3col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Repeat 1fr Twice */
+}
+
 /************************* SPACINGGGGG PERIADDDDDDDDDDDD********************/
+
 .m-0 { margin: var(--space-0);}
 .m-1 { margin: var(--space-1);}
 .m-2 { margin: var(--space-2);}
