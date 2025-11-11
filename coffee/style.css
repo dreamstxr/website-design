@@ -37,6 +37,30 @@ main {
     align-self: center;
 }
 
+/************************* BUTTONS PERIADDDDDDDDDDDD********************/
+
+.btn {
+    border: none;
+    border-radius: var(--space-2);
+    padding: var(--space-1) var(--space-2);
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--light);
+}
+
+.btn-secondary {
+    background-color: var(--muted);
+    color: var(--dark);
+}
+
+.link {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
 /************************* COLORS PERIADDDDDDDDDDDD********************/
 
 .bg-primary { background-color: var(--primary);}
