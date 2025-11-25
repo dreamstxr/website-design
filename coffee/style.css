@@ -106,6 +106,9 @@ main {
 .text-dark {color: var(--dark);}
 .text-muted {color: var(--muted);}
 
+.shadow-dark {box-shadow: var(--shadow-dark);}
+.shadow-light {box-shadow: var(--shadow-light);}
+
 /************************* COMPONENTS PERIADDDDDDDDDDDD********************/
 
 .product-image {
@@ -134,9 +137,32 @@ main {
     left: var(--space-2);
 }
 
+.tags{
+    display: flex;
+    list-style: none;
+    gap: var(--space-1);
+}
+
+.tags .tag-item {
+    background-color: var(--primary);
+    color: var(--light);
+    text-decoration: none;
+
+    border-radius: var(--space-2);
+    padding: var(--space-1) var(--space-2);
+}
+
 /************************* LAYOUTT PERIADDDDDDDDDDDD********************/
+
+.container {
+    max-width: 1280px;
+    margin: var(--space-1) auto var(--space-0)
+}
+
 .d-flex { display: flex;}
+
 .flex-between { justify-content: space-between;}
+
 .grid-2col {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Repeat 1fr Twice */
