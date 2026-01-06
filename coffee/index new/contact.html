@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Page</title>
+</head>
+<body>
+    
+    <form action="mailto:info@coffee.com" method="post" enctype="text/plain" class="contact-form">
+    
+    <div>
+        <label for="input-topic">Topic:</label>
+        <select name="topic" id="input-topic">
+            <option value="" disabled selected>Choose a topic</option required>
+            <option value="I love coffee">I like coffee</option>
+            <option value="I hate coffee">I dislike coffee</option>
+        </select>
+    </div>
+    <div>
+    <label for="input-name">Name:</label>
+    <input type="text" 
+        name="name" 
+        id="input-name"
+        placeholder="ur mom"
+        required
+        minlength="4">
+        </div>
+        <div>
+            <label for="input-email">Email</label>
+            <input type="email" name="email" 
+            id="input-email"
+            placeholder="me@example.com"
+            required>
+        </div>
+        <div>
+            <label for="input-message">Your message:</label>
+            <textarea name="message" id="input-message"
+            placeholder="your message here..."
+            cols="30" rows="10"
+            required
+            minlength="20"></textarea>
+        </div>
+
+        <button type="submit" class="btn primary">Submit</button>
+        <button type="reset" class="btn secondary">Reset</button>
+    </form>
+</body>
+</html>
